@@ -1,0 +1,23 @@
+<div class="transaction">
+  <div class="left">
+    <div class="icon">
+      <span class="material-symbols-outlined">
+        {{ transaction.icon }}
+      </span>
+    </div>
+
+    <div>
+      <h3>{{ transaction.title }}</h3>
+      <p>{{ transaction.category }}</p>
+    </div>
+  </div>
+
+  <div
+    class="amount"
+    [class.positive]="transaction.amount > 0"
+    [class.negative]="transaction.amount < 0"
+    aria-label="Transaction amount"
+  >
+    {{ transaction.amount | currency }}
+  </div>
+</div>

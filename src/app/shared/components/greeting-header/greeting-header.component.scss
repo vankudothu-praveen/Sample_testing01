@@ -1,0 +1,40 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.avatar {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  background: #d7e7ff;
+  color: #0057b8;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+}
+
+.greeting {
+  color: var(--color-text-secondary);
+  margin: 0;
+}
+
+.name {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.notification-btn {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 1px solid var(--color-border);
+  background: white;
+}

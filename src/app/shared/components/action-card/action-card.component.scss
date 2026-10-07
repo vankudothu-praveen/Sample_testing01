@@ -1,0 +1,17 @@
+.action-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  background: transparent;
+  border: none;
+}
+
+.material-symbols-outlined {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: 1px solid var(--color-border);
+  display: grid;
+  place-items: center;
+}

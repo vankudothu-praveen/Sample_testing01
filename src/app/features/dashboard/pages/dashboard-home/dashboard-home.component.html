@@ -1,0 +1,23 @@
+<main class="dashboard" *ngIf="dashboard$ | async as data">
+  <app-greeting-header
+    [userName]="data.userName"
+    [greetingMessage]="data.greeting"
+    [avatarInitials]="data.initials"
+  />
+
+  <app-balance-card
+    [totalBalance]="data.balance"
+    [maskedAccount]="data.accountNumber"
+    [balanceTrendPercentage]="data.trend"
+  />
+
+  <app-quick-actions
+    [actions]="data.actions"
+  />
+
+  <app-recent-activity-list
+    [transactions]="data.transactions"
+  />
+
+  <app-floating-action />
+</main>

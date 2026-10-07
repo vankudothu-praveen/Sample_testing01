@@ -1,0 +1,7 @@
+<section class="actions">
+  <app-action-card
+    *ngFor="let action of actions; trackBy: trackByLabel"
+    [icon]="action.icon"
+    [label]="action.label"
+  />
+</section>

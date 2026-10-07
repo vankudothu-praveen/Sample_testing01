@@ -1,0 +1,19 @@
+<section class="activity">
+  <div class="title-row">
+    <h2>Recent activity</h2>
+
+    <button type="button">
+      See all
+    </button>
+  </div>
+
+  <ul>
+    <li
+      *ngFor="let transaction of transactions; trackBy: trackById"
+    >
+      <app-transaction-item
+        [transaction]="transaction"
+      />
+    </li>
+  </ul>
+</section>

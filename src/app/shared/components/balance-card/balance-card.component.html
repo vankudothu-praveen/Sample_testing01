@@ -1,0 +1,17 @@
+<section class="balance-card">
+  <p class="label">Total balance</p>
+
+  <h2 class="amount">
+    {{ totalBalance | currency:'USD':'symbol':'1.2-2' }}
+  </h2>
+
+  <div class="footer">
+    <span class="account">
+      •••• {{ maskedAccount }}
+    </span>
+
+    <span class="trend">
+      ↗ +{{ balanceTrendPercentage }}%
+    </span>
+  </div>
+</section>
